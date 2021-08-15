@@ -23,10 +23,14 @@ The src folder contains 3 possible MazeSolvers
 2. MazeSolver.java
 3. MazeSolverWithPower.java
 
-The MazeSolverNaive programme (courtesy of NUS School of Computing as a reference for students) does a depth-first search to solve the shortest path in a maze. The other 2 MazeSolvers (entirely my own work) run based on breadth first search to find the shortest path efficiently. The number of rooms reachable with each step is stored in a hashmap while computing the shortest path to solve the maze. This will reduce the computation needed
+The MazeSolverNaive programme (courtesy of NUS School of Computing as a reference for students) does a depth-first search to solve the shortest path in a maze. The other 2 MazeSolvers (entirely my own work) run based on breadth first search to find the shortest path efficiently. The number of rooms reachable with each step is stored in a hashmap while computing the shortest path to solve the maze. This will reduce the computation needed. 
+
+MazeSolverWithPower brings an added twist to the challenge of finding the shortest path by allowing the user to have a limited number of powers to break down walls. The difficulty, then lies in deciding which walls to break down to achieve the shortest path.
 
 ### Running the program
-Run MazeSolver.java or
+Run MazeSolver.java or MazeSolverWithPower.java 
+
+or
 ```
 Maze maze = Maze.readMaze("maze-empty.txt");
 IMazeSolver solver = new MazeSolver();
